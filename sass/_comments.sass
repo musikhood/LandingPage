@@ -1,0 +1,38 @@
+.comments
+    padding: 120px 0 360px 0
+    background-color: var(--bg1)
+    color: var(--gray)
+    font-size: .8rem
+    display: grid
+    grid-template-areas: "one""two""three"
+    gap: 2rem
+    &__comment
+        width: 300px
+        margin: 0 auto
+        background-color: var(--bgtestimonials)
+        padding: 20px
+        &--profile-1
+            position: relative
+            grid-area: one
+            & .quotes
+                position: absolute
+                top: -24px
+                left: 5px
+                width: 30px
+                z-index: 1
+        &--profile-2
+            grid-area: two
+        &--profile-3
+            grid-area: three
+    &__p
+        line-height: 1.4rem
+    &__image
+        display: flex
+        margin-top: 20px
+    &__img
+        width: 40px
+        border-radius: 50%
+        margin-right: 20px
+    &__h5
+        font-size: 0.8rem
+        color: var(--white)
