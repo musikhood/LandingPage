@@ -451,6 +451,24 @@ body {
   margin-bottom: 25px;
 }
 
+.early-access__p--error {
+  display: none;
+  color: var(--error);
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+@media (min-width: 800px) {
+  .early-access__p--error {
+    text-align: left;
+    margin: 0 0 0 40px;
+  }
+}
+
+.early-access__p--error.active {
+  display: block;
+}
+
 .early-access__buttons-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,7 +538,8 @@ body {
 
 @media (min-width: 800px) {
   .early-access__button {
-    width: 30%;
+    margin-right: 30px;
+    width: 35%;
   }
 }
 

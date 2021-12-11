@@ -16,6 +16,16 @@
     &__p
         color: var(--gray)
         margin-bottom: 25px
+        &--error
+            display: none
+            color: var(--error)
+            text-align: center
+            margin: 20px 0 0 0
+            @media (min-width: 800px)
+                text-align: left
+                margin: 0 0 0 40px
+            &.active
+                display: block
     &__buttons-wrapper
         display: flex
         flex-direction: column
@@ -48,7 +58,8 @@
         cursor: pointer
         color: var(--white)
         @media (min-width: 800px)
-            width: 30%
+            margin-right: 30px
+            width: 35%
         &:hover
             background-image: none
             background-color: var(--cyan)
