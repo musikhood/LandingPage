@@ -3,24 +3,31 @@
     color: var(--white)
     text-align: center
     font-family: 'Raleway'
-    background-image: url('../images/bg-curvy-mobile.svg')
-    background-repeat: no-repeat
-    background-position: center
-    background-size: contain
-    min-width: 370px
+    min-width: 320px
+
     &__img
         width: 320px
         margin: 0 auto
+        @media (min-width: 800px)
+            width: 100%
+            padding: 0 40px
+            max-width: 630px
     &__h1
         width: 320px
         margin: 30px auto
         font-size: 1.4rem
         line-height: 2rem
+        @media (min-width: 800px)
+            width: 450px
+            font-size: 1.8rem
     &__p
         width: 320px
         line-height: 1.4rem
         margin: 30px auto 0 auto
         color: var(--gray)
+        @media (min-width: 800px)
+            width: 400px
+            font-size: 1rem
     &__button
         margin-top: 30px
         width: 250px
@@ -37,6 +44,13 @@
             background-image: none
             background-color: var(--cyan)
 .background
-    height: 200px
-    background-color: var(--bg1)
-    margin-top: -220px
+    height: 500px
+    background-image: url('../images/bg-curvy-mobile.svg')
+    background-repeat: no-repeat
+    background-position: center bottom
+    background-size: contain
+    margin-top: -700px
+    @media (min-width: 800px)
+        background-image: url('../images/bg-curvy-desktop.svg')
+        height: 700px
+        margin-top: -580px

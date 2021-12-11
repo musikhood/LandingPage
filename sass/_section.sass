@@ -1,10 +1,19 @@
 .section
     background-color: var(--bg1)
-    display: grid
-    grid-template-areas: "one""two""three""four"
-    gap: 7rem
-    padding: 120px 0
+
+    padding: 320px 0 120px 0
     color: var(--white)
+    @media (min-width: 800px)
+        padding: 0 0 120px 0
+
+    &__wrapper
+        display: grid
+        grid-template-areas: "one""two""three""four"
+        gap: 7rem
+        @media (min-width: 800px)
+            grid-template-areas: "one two""three four"
+            width: 800px
+            margin: 0 auto
     &__p
         color: var(--gray)
     &__div
